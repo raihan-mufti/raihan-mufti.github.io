@@ -143,3 +143,23 @@ html {
   margin-top: 1px;             /* Jarak dari konten */
   font-size: 14px;             /* Ukuran teks kecil */
 }
+/* Responsif untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Ubah jadi vertikal */
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 100%;                  /* Lebar penuh */
+    height: auto;                 /* Tinggi otomatis */
+    border-right: none;          /* Hilangkan garis kanan */
+    border-bottom: 2px solid #334155; /* Tambahkan garis bawah sebagai pembatas */
+    margin-bottom: 20px;         /* Jarak antar elemen */
+  }
+
+  .content {
+    width: 100%;                 /* Lebar penuh untuk konten */
+    padding: 20px;               /* Spasi dalam konten */
+  }
+}
