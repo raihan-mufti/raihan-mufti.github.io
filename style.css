@@ -1,0 +1,145 @@
+/* Reset & Font */
+* {
+  margin: 0;                      /* Hilangkan margin default */
+  padding: 0;                     /* Hilangkan padding default */
+  box-sizing: border-box;        /* Hitung ukuran elemen termasuk padding & border */
+}
+body {
+  font-family: 'Segoe UI', sans-serif;  /* Gunakan font modern */
+  background-color: #0f172a;            /* Latar belakang gelap elegan */
+  color: #f8fafc;                       /* Warna teks terang */
+  line-height: 1.6;                     /* Jarak antar baris */
+}
+
+/* Layout */
+.container {
+  display: flex;                 /* Tata letak 2 kolom (sidebar dan konten) */
+  min-height: 100vh;            /* Tinggi minimal layar penuh */
+  padding: 40px;                /* Spasi di sekeliling kontainer */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;                   /* Sidebar 20% dari lebar layar */
+  background-color: #0f172a;   /* Warna sama dengan latar */
+  padding: 10px 20px;          /* Spasi dalam sidebar */
+  position: sticky;            /* Tetap di tempat saat digulir */
+  top: 0;                      /* Nempel di atas */
+  height: 100vh;               /* Tinggi penuh layar */
+  border-right: 2px solid #334155;  /* Garis pemisah di kanan */
+}
+.sidebar * {
+  background-color: inherit;   /* Warna latar ikut sidebar */
+}
+.sidebar h1 {
+  font-size: 28px;             /* Ukuran besar untuk nama */
+  color: #f8fafc;              /* Warna putih terang */
+  margin-bottom: 10px;         /* Jarak bawah teks */
+}
+
+.job-title {
+  font-size: 16px;             /* Ukuran sedang untuk NIM */
+  color: #38bdf8;              /* Biru cerah */
+  margin-bottom: 20px;         /* Jarak bawah */
+}
+
+.description {
+  font-size: 14px;             /* Ukuran kecil */
+  color: #cbd5e1;              /* Abu terang */
+  margin-bottom: 30px;         /* Jarak bawah besar */
+}
+
+.nav-links a {
+  display: block;              /* Tampilkan vertikal */
+  color: #94a3b8;              /* Warna link abu terang */
+  margin-bottom: 12px;         /* Jarak antar link */
+  text-decoration: none;       /* Hilangkan garis bawah */
+  font-weight: bold;           /* Teks tebal */
+  transition: color 0.3s ease; /* Animasi perubahan warna */
+}
+.nav-links a:hover {
+  color: #38bdf8;              /* Warna berubah saat hover */
+}
+
+.socials {
+  margin-top: 30px;            /* Jarak atas dari link */
+}
+.socials a {
+  margin-right: 15px;          /* Jarak antar ikon */
+  color: #94a3b8;              /* Warna abu terang */
+  font-size: 20px;             /* Ukuran ikon */
+  transition: color 0.3s ease; /* Animasi hover */
+}
+.socials a:hover {
+  color: #38bdf8;              /* Warna biru saat hover */
+}
+
+/* Konten Utama */
+.content {
+  width: 70%;                  /* Lebar konten utama */
+  padding: 60px;               /* Spasi dalam konten */
+}
+
+.content h3 {
+  font-size: 1.6em;            /* Ukuran judul bagian */
+  color: #38bdf8;              /* Warna biru cerah */
+  margin-bottom: 10px;         /* Jarak bawah judul */
+}
+
+.content ul {
+  margin-top: 10px;            /* Jarak atas list */
+  padding-left: 20px;          /* Spasi dari kiri */
+}
+
+/* Grid Project */
+.project-grid {
+  display: grid;                                 /* Gunakan grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsif */
+  gap: 30px;                                     /* Jarak antar kartu */
+  margin-top: 20px;                              /* Jarak dari elemen atas */
+}
+
+.project-card {
+  background-color: #1e293b;   /* Kartu latar abu gelap */
+  padding: 20px;               /* Spasi dalam kartu */
+  border-radius: 12px;         /* Sudut melengkung */
+  text-align: center;          /* Teks rata tengah */
+  transition: transform 0.3s ease; /* Efek hover lembut */
+}
+
+.project-card:hover {
+  transform: translateY(-8px); /* Naik sedikit saat hover */
+}
+
+.project-card img {
+  width: 70%;                  /* Lebar gambar dalam kartu */
+  height: auto;                /* Tinggi otomatis */
+  object-fit: cover;           /* Gambar menyesuaikan bingkai */
+  border-radius: 8px;          /* Sudut gambar melengkung */
+  margin-bottom: 15px;         /* Jarak bawah gambar */
+}
+
+.project-card h4 {
+  font-size: 1.2em;            /* Ukuran judul proyek */
+  color: #38bdf8;              /* Warna biru */
+  margin-bottom: 10px;         /* Jarak bawah */
+}
+
+.project-card p {
+  font-size: 0.9em;            /* Ukuran paragraf kecil */
+  color: #cbd5e1;              /* Warna abu terang */
+}
+
+html {
+  scroll-behavior: smooth;     /* Scroll halus saat klik menu */
+}
+
+.footer-box {
+  width: 100%;                 /* Lebar penuh */
+  background-color: #1e293b;   /* Warna gelap */
+  color: #94a3b8;              /* Teks abu terang */
+  text-align: center;          /* Teks di tengah */
+  padding: 20px 0;             /* Spasi atas bawah */
+  margin-top: 1px;             /* Jarak dari konten */
+  font-size: 14px;             /* Ukuran teks kecil */
+}
